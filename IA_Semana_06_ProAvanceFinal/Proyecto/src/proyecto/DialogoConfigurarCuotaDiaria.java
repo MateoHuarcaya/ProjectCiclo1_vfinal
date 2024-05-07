@@ -10,6 +10,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class DialogoConfigurarCuotaDiaria extends JDialog implements ActionListener {
 
@@ -18,6 +20,7 @@ public class DialogoConfigurarCuotaDiaria extends JDialog implements ActionListe
 	private JTextField txtCuotaDiaria;
 	private JButton btnCancelar;
 	private JButton btnAceptar;
+	private JLabel lblNewLabel;
 
 	/**
 	 * Launch the application.
@@ -36,6 +39,7 @@ public class DialogoConfigurarCuotaDiaria extends JDialog implements ActionListe
 	 * Create the dialog.
 	 */
 	public DialogoConfigurarCuotaDiaria() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\dia-de-paga.png"));
 		setModal(true);
 		setTitle("Configurar Cuota Diaria");
 		setBounds(100, 100, 450, 105);
@@ -66,6 +70,12 @@ public class DialogoConfigurarCuotaDiaria extends JDialog implements ActionListe
 			btnCancelar.addActionListener(this);
 			btnCancelar.setBounds(335, 32, 89, 23);
 			contentPanel.add(btnCancelar);
+		}
+		{
+			lblNewLabel = new JLabel("");
+			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+			lblNewLabel.setBounds(0, 0, 436, 68);
+			contentPanel.add(lblNewLabel);
 		}
 	}
 

@@ -10,6 +10,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class DialogoConfigurarCantidadOptima extends JDialog implements ActionListener {
 
@@ -18,6 +20,7 @@ public class DialogoConfigurarCantidadOptima extends JDialog implements ActionLi
 	private JTextField txtCantidadOptima;
 	private JButton btnCancelar;
 	private JButton btnAceptar;
+	private JLabel lblNewLabel;
 
 	/**
 	 * Launch the application.
@@ -36,6 +39,7 @@ public class DialogoConfigurarCantidadOptima extends JDialog implements ActionLi
 	 * Create the dialog.
 	 */
 	public DialogoConfigurarCantidadOptima() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\cajas.png"));
 		setModal(true);
 		setTitle("Configurar Cantidad Optima");
 		setBounds(100, 100, 450, 120);
@@ -66,6 +70,12 @@ public class DialogoConfigurarCantidadOptima extends JDialog implements ActionLi
 			btnCancelar.addActionListener(this);
 			btnCancelar.setBounds(335, 49, 89, 23);
 			contentPanel.add(btnCancelar);
+		}
+		{
+			lblNewLabel = new JLabel("");
+			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+			lblNewLabel.setBounds(0, -1, 436, 84);
+			contentPanel.add(lblNewLabel);
 		}
 	}
 

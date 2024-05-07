@@ -10,6 +10,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class DialogoConfigurarDescuentos extends JDialog implements ActionListener {
 
@@ -39,6 +41,7 @@ public class DialogoConfigurarDescuentos extends JDialog implements ActionListen
 	 * Create the dialog.
 	 */
 	public DialogoConfigurarDescuentos() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\descuento.png"));
 		setModal(true);
 		setTitle("Configurar Porcentajes de Descuento");
 		setBounds(100, 100, 450, 169);
@@ -125,6 +128,12 @@ public class DialogoConfigurarDescuentos extends JDialog implements ActionListen
 			btnCancelar.addActionListener(this);
 			btnCancelar.setBounds(335, 42, 89, 23);
 			contentPanel.add(btnCancelar);
+		}
+		{
+			JLabel lblNewLabel = new JLabel("");
+			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+			lblNewLabel.setBounds(0, 0, 436, 132);
+			contentPanel.add(lblNewLabel);
 		}
 	}
 

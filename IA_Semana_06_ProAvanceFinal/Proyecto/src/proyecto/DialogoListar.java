@@ -9,6 +9,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import javax.swing.UIManager;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class DialogoListar extends JDialog implements ActionListener {
 
@@ -17,6 +20,7 @@ public class DialogoListar extends JDialog implements ActionListener {
 	private JTextArea txtS;
 	private JButton btnCerrar;
 	private JButton btnListar;
+	private JLabel lblNewLabel;
 
 	/**
 	 * Launch the application.
@@ -44,6 +48,7 @@ public class DialogoListar extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DialogoListar() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\tarea-completada.png"));
 		setModal(true);
 		setTitle("Listado de Cocinas");
 		setBounds(100, 100, 466, 321);
@@ -66,6 +71,11 @@ public class DialogoListar extends JDialog implements ActionListener {
 		btnListar.addActionListener(this);
 		btnListar.setBounds(113, 248, 89, 23);
 		getContentPane().add(btnListar);
+		
+		lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+		lblNewLabel.setBounds(0, 0, 452, 284);
+		getContentPane().add(lblNewLabel);
 
 	}
 

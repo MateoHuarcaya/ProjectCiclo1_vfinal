@@ -12,6 +12,9 @@ import javax.swing.JButton;
 import javax.swing.JPasswordField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Toolkit;
+import javax.swing.ImageIcon;
+import java.awt.Font;
 
 public class Login extends JFrame implements ActionListener {
 
@@ -25,6 +28,8 @@ public class Login extends JFrame implements ActionListener {
  
 	//Variables Globales
 	int numErrores = 0, numIntentos = 3;
+	private JLabel lblFondo;
+	private JLabel lblNewLabel;
 	/**
 	 * Launch the application.
 	 */
@@ -45,6 +50,7 @@ public class Login extends JFrame implements ActionListener {
 	 * Create the frame.
 	 */
 	public Login() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\login.png"));
 		setTitle("Login Cocina");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -55,26 +61,39 @@ public class Login extends JFrame implements ActionListener {
 		contentPane.setLayout(null);
 
 		lblUsuario = new JLabel("Usuario");
-		lblUsuario.setBounds(10, 41, 80, 14);
+		lblUsuario.setFont(new Font("Verdana", Font.BOLD, 15));
+		lblUsuario.setBounds(195, 56, 80, 14);
 		contentPane.add(lblUsuario);
 
 		lblContraseña = new JLabel("Contraseña");
-		lblContraseña.setBounds(10, 96, 92, 14);
+		lblContraseña.setFont(new Font("Verdana", Font.BOLD, 15));
+		lblContraseña.setBounds(195, 104, 110, 14);
 		contentPane.add(lblContraseña);
 
 		txtUsuario = new JTextField();
-		txtUsuario.setBounds(112, 38, 111, 20);
+		txtUsuario.setBounds(315, 53, 111, 20);
 		contentPane.add(txtUsuario);
 		txtUsuario.setColumns(10);
 
 		btnIngresar = new JButton("Ingresar");
+		btnIngresar.setFont(new Font("Verdana", Font.BOLD, 15));
 		btnIngresar.addActionListener(this);
-		btnIngresar.setBounds(62, 172, 131, 45);
+		btnIngresar.setBounds(215, 177, 154, 33);
 		contentPane.add(btnIngresar);
 
 		jPassContraseña = new JPasswordField();
-		jPassContraseña.setBounds(112, 93, 111, 20);
+		jPassContraseña.setBounds(315, 103, 111, 20);
 		contentPane.add(jPassContraseña);
+		
+		lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\user-profile_5645052 (2).png"));
+		lblNewLabel.setBounds(27, 24, 140, 147);
+		contentPane.add(lblNewLabel);
+		
+		lblFondo = new JLabel("");
+		lblFondo.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\8522393.jpg"));
+		lblFondo.setBounds(0, 0, 436, 263);
+		contentPane.add(lblFondo);
 	}
 
 	public void actionPerformed(ActionEvent e) {

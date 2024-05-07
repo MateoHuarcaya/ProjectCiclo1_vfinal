@@ -11,6 +11,8 @@ import javax.swing.JTextField;
 import javax.swing.DefaultComboBoxModel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class DialogoConsultarCocina extends JDialog implements ActionListener {
 
@@ -29,6 +31,7 @@ public class DialogoConsultarCocina extends JDialog implements ActionListener {
 	private JTextField txtFondo;
 	private JTextField txtQuemadores;
 	private JButton btnCerrar;
+	private JLabel lblNewLabel;
 
 	/**
 	 * Launch the application.
@@ -47,6 +50,7 @@ public class DialogoConsultarCocina extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DialogoConsultarCocina() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\asistente-virtual.png"));
 		setModal(true);
 		setTitle("Consultar Cocina");
 		setBounds(100, 100, 450, 213);
@@ -125,6 +129,11 @@ public class DialogoConsultarCocina extends JDialog implements ActionListener {
 		btnCerrar.addActionListener(this);
 		btnCerrar.setBounds(335, 7, 89, 23);
 		contentPanel.add(btnCerrar);
+		
+		lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+		lblNewLabel.setBounds(0, 0, 436, 176);
+		contentPanel.add(lblNewLabel);
 	}
 
 	public void actionPerformed(ActionEvent e) {

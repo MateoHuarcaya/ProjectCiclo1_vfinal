@@ -12,6 +12,8 @@ import javax.swing.JComboBox;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class DialogoModificarCocina extends JDialog implements ActionListener {
 
@@ -25,6 +27,7 @@ public class DialogoModificarCocina extends JDialog implements ActionListener {
 	private JButton btnGrabar;
 	private JComboBox<String> cboModelo;
 	private JButton btnCerrar;
+	private JLabel lblNewLabel;
 
 	/**
 	 * Launch the application.
@@ -43,6 +46,7 @@ public class DialogoModificarCocina extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DialogoModificarCocina() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\cocina.png"));
 		setModal(true);
 		setTitle("Modificar Cocina");
 		setBounds(100, 100, 450, 221);
@@ -134,6 +138,12 @@ public class DialogoModificarCocina extends JDialog implements ActionListener {
 			btnCerrar.addActionListener(this);
 			btnCerrar.setBounds(335, 32, 89, 23);
 			contentPanel.add(btnCerrar);
+		}
+		{
+			lblNewLabel = new JLabel("New label");
+			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+			lblNewLabel.setBounds(0, 0, 436, 184);
+			contentPanel.add(lblNewLabel);
 		}
 	}
 

@@ -13,6 +13,8 @@ import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class DialogoGenerarReportes extends JDialog implements ActionListener {
 
@@ -21,6 +23,7 @@ public class DialogoGenerarReportes extends JDialog implements ActionListener {
 	private JButton btnCerrar;
 	private JComboBox<String> cboTipoDeReporte;
 	private JTextArea txtS;
+	private JLabel lblNewLabel_1;
 
 	/**
 	 * Launch the application.
@@ -39,6 +42,7 @@ public class DialogoGenerarReportes extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DialogoGenerarReportes() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\reporte-de-negocios.png"));
 		setModal(true);
 		setTitle("Generar Reportes");
 		setBounds(100, 100, 587, 336);
@@ -76,6 +80,12 @@ public class DialogoGenerarReportes extends JDialog implements ActionListener {
 				scrollPane.setViewportView(txtS);
 
 			}
+		}
+		{
+			lblNewLabel_1 = new JLabel("New label");
+			lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\8522393.jpg"));
+			lblNewLabel_1.setBounds(0, 0, 573, 299);
+			contentPanel.add(lblNewLabel_1);
 		}
 	}
 

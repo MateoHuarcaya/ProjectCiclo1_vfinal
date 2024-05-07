@@ -10,6 +10,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class DialogoConfigurarObsequios extends JDialog implements ActionListener {
 
@@ -23,6 +25,7 @@ public class DialogoConfigurarObsequios extends JDialog implements ActionListene
 	private JTextField txtObsequio3;
 	private JButton btnAceptar;
 	private JButton btnCancelar;
+	private JLabel lblNewLabel;
 
 	/**
 	 * Launch the application.
@@ -41,6 +44,7 @@ public class DialogoConfigurarObsequios extends JDialog implements ActionListene
 	 * Create the dialog.
 	 */
 	public DialogoConfigurarObsequios() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\regalo.png"));
 		setModal(true);
 		setTitle("Configurar Obsequios");
 		setBounds(100, 100, 450, 135);
@@ -88,6 +92,11 @@ public class DialogoConfigurarObsequios extends JDialog implements ActionListene
 		btnCancelar.addActionListener(this);
 		btnCancelar.setBounds(335, 32, 89, 23);
 		contentPanel.add(btnCancelar);
+		
+		lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+		lblNewLabel.setBounds(0, 0, 436, 98);
+		contentPanel.add(lblNewLabel);
 	}
 
 	public void actionPerformed(ActionEvent e) {

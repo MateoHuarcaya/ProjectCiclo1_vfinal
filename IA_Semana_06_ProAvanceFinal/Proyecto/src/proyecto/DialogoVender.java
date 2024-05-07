@@ -15,6 +15,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 
 public class DialogoVender extends JDialog implements ActionListener {
 
@@ -27,6 +29,7 @@ public class DialogoVender extends JDialog implements ActionListener {
 	private JComboBox<String> cboModelo;
 	private JButton btnCerrar;
 	private JButton btnVender;
+	private JLabel lblNewLabel;
 
 	/**
 	 * Launch the application.
@@ -45,6 +48,7 @@ public class DialogoVender extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DialogoVender() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\punto-de-venta.png"));
 		setModal(true);
 		setTitle("Vender");
 		setBounds(100, 100, 450, 337);
@@ -109,6 +113,12 @@ public class DialogoVender extends JDialog implements ActionListener {
 		txtS = new JTextArea();
 		txtS.setFont(new Font("Monospaced", Font.PLAIN, 13));
 		scrollPane.setViewportView(txtS);
+		{
+			lblNewLabel = new JLabel("New label");
+			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\8522393.jpg"));
+			lblNewLabel.setBounds(0, 0, 436, 300);
+			contentPanel.add(lblNewLabel);
+		}
 	}
 
 	public void actionPerformed(ActionEvent e) {
