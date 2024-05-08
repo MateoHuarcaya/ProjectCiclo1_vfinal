@@ -14,6 +14,11 @@ import javax.swing.JOptionPane;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.IOException;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -22,6 +27,40 @@ import javax.swing.ImageIcon;
 
 
 public class Menu extends JFrame implements ActionListener {
+	
+	private void showMaximizedImage() {
+		class MaximizeImage extends JFrame {
+			private BufferedImage image;
+			public MaximizeImage() {
+				try {
+					//Cargar la imagen desde el archivo
+					image=ImageIO.read(new File("pictures/final3.png"));
+						
+					//Obtener el tamaño de la pantalla
+					Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+					int screenWidth = (int) screenSize.getWidth();
+					int screenHeight = (int) screenSize.getHeight();
+						
+					//Escalar la imagen para que se ajuste a la pantalla
+					Image scaledImage = image.getScaledInstance(screenWidth, screenHeight, Image.SCALE_SMOOTH);
+						
+					//Crear un Jlabel para mostrar la imagen escalada
+					JLabel label = new JLabel(new ImageIcon(scaledImage));
+						
+					//Configurar el Jframe para mostrar la imagen
+					this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+					this.getContentPane().add(label);
+					this.pack();
+					this.setLocationRelativeTo(null); //centra la ventana de la pantalla
+					this.setVisible(true);
+				} catch (IOException e) {
+						e.printStackTrace();
+				}	
+			}
+		}
+		//Crear una instancia de MaximizeImage
+		SwingUtilities.invokeLater(MaximizeImage::new);
+	}
 	
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -113,6 +152,7 @@ public class Menu extends JFrame implements ActionListener {
 	public static double aporteCuota3 = 0;
 	public static double aporteCuota4 = 0;
 	
+	
 
 	/**
 	 * Launch the application.
@@ -120,6 +160,7 @@ public class Menu extends JFrame implements ActionListener {
 	public static void main(String[] args) {
 		
         SwingUtilities.invokeLater(() -> {
+        	Menu menu = new Menu();
             Menu frame = new Menu();
         });
 		
