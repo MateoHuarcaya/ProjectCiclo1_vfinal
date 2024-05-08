@@ -50,7 +50,7 @@ public class Login extends JFrame implements ActionListener {
 	 * Create the frame.
 	 */
 	public Login() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\login.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("pictures/login.png"));
 		setTitle("Login Cocina");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -86,12 +86,12 @@ public class Login extends JFrame implements ActionListener {
 		contentPane.add(jPassContraseña);
 		
 		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\user-profile_5645052 (2).png"));
+		lblNewLabel.setIcon(new ImageIcon("pictures/user-profile_5645052 (2).png"));
 		lblNewLabel.setBounds(27, 24, 140, 147);
 		contentPane.add(lblNewLabel);
 		
 		lblFondo = new JLabel("");
-		lblFondo.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\8522393.jpg"));
+		lblFondo.setIcon(new ImageIcon("pictures/8522393.jpg"));
 		lblFondo.setBounds(0, 0, 436, 263);
 		contentPane.add(lblFondo);
 	}

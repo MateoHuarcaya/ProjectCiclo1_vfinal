@@ -50,7 +50,7 @@ public class DialogoConsultarCocina extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DialogoConsultarCocina() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\asistente-virtual.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("pictures/asistente-virtual.png"));
 		setModal(true);
 		setTitle("Consultar Cocina");
 		setBounds(100, 100, 450, 213);
@@ -131,7 +131,7 @@ public class DialogoConsultarCocina extends JDialog implements ActionListener {
 		contentPanel.add(btnCerrar);
 		
 		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("pictures/fondo2.jpg"));
 		lblNewLabel.setBounds(0, 0, 436, 176);
 		contentPanel.add(lblNewLabel);
 	}

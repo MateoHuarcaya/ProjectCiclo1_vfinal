@@ -39,7 +39,7 @@ public class DialogoConfigurarCantidadOptima extends JDialog implements ActionLi
 	 * Create the dialog.
 	 */
 	public DialogoConfigurarCantidadOptima() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\cajas.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("pictures/cajas.png"));
 		setModal(true);
 		setTitle("Configurar Cantidad Optima");
 		setBounds(100, 100, 450, 120);
@@ -73,7 +73,7 @@ public class DialogoConfigurarCantidadOptima extends JDialog implements ActionLi
 		}
 		{
 			lblNewLabel = new JLabel("");
-			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+			lblNewLabel.setIcon(new ImageIcon("pictures/fondo2.jpg"));
 			lblNewLabel.setBounds(0, -1, 436, 84);
 			contentPanel.add(lblNewLabel);
 		}

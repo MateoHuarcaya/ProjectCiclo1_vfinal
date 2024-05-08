@@ -44,7 +44,7 @@ public class DialogoConfigurarObsequios extends JDialog implements ActionListene
 	 * Create the dialog.
 	 */
 	public DialogoConfigurarObsequios() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\regalo.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("pictures/regalo.png"));
 		setModal(true);
 		setTitle("Configurar Obsequios");
 		setBounds(100, 100, 450, 135);
@@ -94,7 +94,7 @@ public class DialogoConfigurarObsequios extends JDialog implements ActionListene
 		contentPanel.add(btnCancelar);
 		
 		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("pictures/fondo2.jpg"));
 		lblNewLabel.setBounds(0, 0, 436, 98);
 		contentPanel.add(lblNewLabel);
 	}

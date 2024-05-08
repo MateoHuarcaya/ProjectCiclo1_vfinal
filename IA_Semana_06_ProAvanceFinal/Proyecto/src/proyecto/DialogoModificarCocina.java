@@ -46,7 +46,7 @@ public class DialogoModificarCocina extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DialogoModificarCocina() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\cocina.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("pictures/cocina.png"));
 		setModal(true);
 		setTitle("Modificar Cocina");
 		setBounds(100, 100, 450, 221);
@@ -141,7 +141,7 @@ public class DialogoModificarCocina extends JDialog implements ActionListener {
 		}
 		{
 			lblNewLabel = new JLabel("New label");
-			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+			lblNewLabel.setIcon(new ImageIcon("pictures/fondo2.jpg"));
 			lblNewLabel.setBounds(0, 0, 436, 184);
 			contentPanel.add(lblNewLabel);
 		}

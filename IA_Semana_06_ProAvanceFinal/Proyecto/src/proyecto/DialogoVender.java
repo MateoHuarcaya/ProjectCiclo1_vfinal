@@ -48,7 +48,7 @@ public class DialogoVender extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DialogoVender() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\punto-de-venta.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("pictures/punto-de-venta.png"));
 		setModal(true);
 		setTitle("Vender");
 		setBounds(100, 100, 450, 337);
@@ -115,7 +115,7 @@ public class DialogoVender extends JDialog implements ActionListener {
 		scrollPane.setViewportView(txtS);
 		{
 			lblNewLabel = new JLabel("New label");
-			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\8522393.jpg"));
+			lblNewLabel.setIcon(new ImageIcon("pictures/8522393.jpg"));
 			lblNewLabel.setBounds(0, 0, 436, 300);
 			contentPanel.add(lblNewLabel);
 		}

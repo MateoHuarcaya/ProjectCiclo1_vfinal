@@ -48,7 +48,7 @@ public class DialogoListar extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DialogoListar() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\tarea-completada.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("pictures/tarea-completada.png"));
 		setModal(true);
 		setTitle("Listado de Cocinas");
 		setBounds(100, 100, 466, 321);
@@ -73,7 +73,7 @@ public class DialogoListar extends JDialog implements ActionListener {
 		getContentPane().add(btnListar);
 		
 		lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("pictures/fondo2.jpg"));
 		lblNewLabel.setBounds(0, 0, 452, 284);
 		getContentPane().add(lblNewLabel);
 

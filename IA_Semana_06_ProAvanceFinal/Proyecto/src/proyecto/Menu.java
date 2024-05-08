@@ -139,7 +139,7 @@ public class Menu extends JFrame implements ActionListener {
 	 * Create the frame.
 	 */
 	public Menu() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\carro-de-la-compra.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("pictures/carro-de-la-compra.png"));
 		setTitle("Tienda ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 532, 416);
@@ -152,7 +152,7 @@ public class Menu extends JFrame implements ActionListener {
 		menuBar.add(mnNewMenu);
 
 		mntmNewMenuItem = new JMenuItem("Salir");
-		mntmNewMenuItem.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\cerrar-sesion.png"));
+		mntmNewMenuItem.setIcon(new ImageIcon("pictures/cerrar-sesion.png"));
 		mntmNewMenuItem.addActionListener(this);
 		mnNewMenu.add(mntmNewMenuItem);
 
@@ -160,17 +160,17 @@ public class Menu extends JFrame implements ActionListener {
 		menuBar.add(mnNewMenu_1);
 
 		mntmNewMenuItem_1 = new JMenuItem("Consultar Cocina");
-		mntmNewMenuItem_1.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\asistente-virtual.png"));
+		mntmNewMenuItem_1.setIcon(new ImageIcon("pictures/asistente-virtual.png"));
 		mntmNewMenuItem_1.addActionListener(this);
 		mnNewMenu_1.add(mntmNewMenuItem_1);
 
 		mntmNewMenuItem_2 = new JMenuItem("Modificar Cocina");
-		mntmNewMenuItem_2.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\cocina.png"));
+		mntmNewMenuItem_2.setIcon(new ImageIcon("pictures/cocina.png"));
 		mntmNewMenuItem_2.addActionListener(this);
 		mnNewMenu_1.add(mntmNewMenuItem_2);
 
 		mntmNewMenuItem_3 = new JMenuItem("Listar Cocinas");
-		mntmNewMenuItem_3.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\tarea-completada.png"));
+		mntmNewMenuItem_3.setIcon(new ImageIcon("pictures/tarea-completada.png"));
 		mntmNewMenuItem_3.addActionListener(this);
 		mnNewMenu_1.add(mntmNewMenuItem_3);
 
@@ -178,12 +178,12 @@ public class Menu extends JFrame implements ActionListener {
 		menuBar.add(mnNewMenu_2);
 
 		mntmNewMenuItem_4 = new JMenuItem("Vender");
-		mntmNewMenuItem_4.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\punto-de-venta.png"));
+		mntmNewMenuItem_4.setIcon(new ImageIcon("pictures/punto-de-venta.png"));
 		mntmNewMenuItem_4.addActionListener(this);
 		mnNewMenu_2.add(mntmNewMenuItem_4);
 
 		mntmNewMenuItem_5 = new JMenuItem("Generar Reportes");
-		mntmNewMenuItem_5.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\reporte-de-negocios.png"));
+		mntmNewMenuItem_5.setIcon(new ImageIcon("pictures/reporte-de-negocios.png"));
 		mntmNewMenuItem_5.addActionListener(this);
 		mnNewMenu_2.add(mntmNewMenuItem_5);
 
@@ -191,22 +191,22 @@ public class Menu extends JFrame implements ActionListener {
 		menuBar.add(mnNewMenu_3);
 
 		mntmNewMenuItem_6 = new JMenuItem("Configurar Descuentos");
-		mntmNewMenuItem_6.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\descuento.png"));
+		mntmNewMenuItem_6.setIcon(new ImageIcon("pictures/descuento.png"));
 		mntmNewMenuItem_6.addActionListener(this);
 		mnNewMenu_3.add(mntmNewMenuItem_6);
 
 		mntmNewMenuItem_7 = new JMenuItem("Configurar Obsequios");
-		mntmNewMenuItem_7.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\regalo.png"));
+		mntmNewMenuItem_7.setIcon(new ImageIcon("pictures/regalo.png"));
 		mntmNewMenuItem_7.addActionListener(this);
 		mnNewMenu_3.add(mntmNewMenuItem_7);
 
 		mntmNewMenuItem_8 = new JMenuItem("Configurar Cantidad Optima");
-		mntmNewMenuItem_8.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\cajas.png"));
+		mntmNewMenuItem_8.setIcon(new ImageIcon("pictures/cajas.png"));
 		mntmNewMenuItem_8.addActionListener(this);
 		mnNewMenu_3.add(mntmNewMenuItem_8);
 
 		mntmNewMenuItem_9 = new JMenuItem("Configurar Cuota Diaria");
-		mntmNewMenuItem_9.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\dia-de-paga.png"));
+		mntmNewMenuItem_9.setIcon(new ImageIcon("pictures/dia-de-paga.png"));
 		mntmNewMenuItem_9.addActionListener(this);
 		mnNewMenu_3.add(mntmNewMenuItem_9);
 
@@ -214,7 +214,7 @@ public class Menu extends JFrame implements ActionListener {
 		menuBar.add(mnNewMenu_4);
 
 		mntmNewMenuItem_10 = new JMenuItem("Acerca de Tienda");
-		mntmNewMenuItem_10.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\socio.png"));
+		mntmNewMenuItem_10.setIcon(new ImageIcon("pictures/socio.png"));
 		mntmNewMenuItem_10.addActionListener(this);
 		mnNewMenu_4.add(mntmNewMenuItem_10);
 		contentPane = new JPanel();
@@ -231,7 +231,7 @@ public class Menu extends JFrame implements ActionListener {
 
 	     // Agregar contenido
 	     JLabel label = new JLabel("");
-	     label.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\final3.png"));
+	     label.setIcon(new ImageIcon("pictures/final3.png"));
 	     getContentPane().add(label, BorderLayout.NORTH);
 
 	     // Obtener el tamaño de la pantalla

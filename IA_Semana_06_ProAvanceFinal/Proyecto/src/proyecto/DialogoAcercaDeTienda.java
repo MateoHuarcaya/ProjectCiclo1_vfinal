@@ -53,7 +53,7 @@ public class DialogoAcercaDeTienda extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DialogoAcercaDeTienda() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\socio.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("pictures/socio.png"));
 		setModal(true);
 		setTitle("Acerca de Tienda");
 		setBounds(100, 100, 450, 319);
@@ -109,7 +109,7 @@ public class DialogoAcercaDeTienda extends JDialog implements ActionListener {
 		contentPanel.add(lblIntegrante4);
 		
 		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\8522393.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("pictures/8522393.jpg"));
 		lblNewLabel.setBounds(0, 0, 436, 282);
 		contentPanel.add(lblNewLabel);
 	}

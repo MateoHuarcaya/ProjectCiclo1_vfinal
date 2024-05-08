@@ -41,7 +41,7 @@ public class DialogoConfigurarDescuentos extends JDialog implements ActionListen
 	 * Create the dialog.
 	 */
 	public DialogoConfigurarDescuentos() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\descuento.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("pictures/descuento.png"));
 		setModal(true);
 		setTitle("Configurar Porcentajes de Descuento");
 		setBounds(100, 100, 450, 169);
@@ -131,7 +131,7 @@ public class DialogoConfigurarDescuentos extends JDialog implements ActionListen
 		}
 		{
 			JLabel lblNewLabel = new JLabel("");
-			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+			lblNewLabel.setIcon(new ImageIcon("pictures/fondo2.jpg"));
 			lblNewLabel.setBounds(0, 0, 436, 132);
 			contentPanel.add(lblNewLabel);
 		}

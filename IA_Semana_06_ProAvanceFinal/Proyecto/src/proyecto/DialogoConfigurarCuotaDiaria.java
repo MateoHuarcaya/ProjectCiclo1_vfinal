@@ -39,7 +39,7 @@ public class DialogoConfigurarCuotaDiaria extends JDialog implements ActionListe
 	 * Create the dialog.
 	 */
 	public DialogoConfigurarCuotaDiaria() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\dia-de-paga.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("pictures/dia-de-paga.png"));
 		setModal(true);
 		setTitle("Configurar Cuota Diaria");
 		setBounds(100, 100, 450, 105);
@@ -73,7 +73,7 @@ public class DialogoConfigurarCuotaDiaria extends JDialog implements ActionListe
 		}
 		{
 			lblNewLabel = new JLabel("");
-			lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Matthcode\\Documents\\Proyects_programming\\Proyect_Git\\ProjectCiclo1_vfinal\\pictures\\fondo2.jpg"));
+			lblNewLabel.setIcon(new ImageIcon("pictures/fondo2.jpg"));
 			lblNewLabel.setBounds(0, 0, 436, 68);
 			contentPanel.add(lblNewLabel);
 		}
